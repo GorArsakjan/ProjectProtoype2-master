@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="ProjectProtoype2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjectProtoype2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer HorizontalScrollMode="Enabled" 
+                  VerticalScrollMode="Disabled"
+                  VerticalScrollBarVisibility="Hidden"
+                  HorizontalScrollBarVisibility="Visible">
+
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid Width="525" HorizontalAlignment="Left" Margin="5,0,0,0" >
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/MainPage/city_bridge_rail_fog_blurred_glare_cars_traffic_47826_3840x2160.jpg" Stretch="UniformToFill"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Stretch" Margin="182,0,182,42" Grid.Row="1" VerticalAlignment="Bottom" d:LayoutOverrides="VerticalAlignment"/>
+                <PasswordBox x:Name="passwordBox" Margin="120,0,120,110" VerticalAlignment="Bottom" PlaceholderText="Password"  Grid.Row="1"/>
+                <TextBox x:Name="UserNameBox" Margin="120,49,120,0" Grid.Row="1" TextWrapping="Wrap" PlaceholderText="E-mail" VerticalAlignment="Top"/>
+                <Image Source="Assets/MainPage/facebook-flat-vector-logo-400x400.png" HorizontalAlignment="Right" Margin="0,0,80,10" Width="90" Height="86" VerticalAlignment="Bottom"/>
+                <Image Source="Assets/MainPage/google-official.png" HorizontalAlignment="Left" Margin="80,0,0,10" Width="90" Height="86" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid Margin="530,0,0,0" d:LayoutOverrides="TopPosition, BottomPosition">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="800"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="1" Source="Assets/MainPage/download.jpg" Margin="110,10,-10,0" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                <TextBlock x:Name="WeekOfferTextBlock" HorizontalAlignment="Left" Margin="110,80,0,0" TextWrapping="Wrap" Text="Offer of the week" VerticalAlignment="Top" Height="35" Width="265" FontSize="29.333"/>
+                <TextBlock x:Name="WeekOfferHeaderTextBlock" Margin="110,43,96,0" Grid.Row="2" TextWrapping="Wrap" Text="Lorem Ipsum" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="35" FontSize="18.667"/>
+                <TextBlock x:Name="WeekOfferTextTextBlock" Margin="110,83,96,43" Grid.Row="2" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ultrices nisl eu dignissim. In commodo blandit ligula, non consectetur ipsum scelerisque vitae. Integer rutrum, dui in efficitur egestas, neque nunc cursus arcu, dignissim tempus erat quam eget nunc. Pellentesque posuere vel purus sed iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in nisl gravida, sodales mauris vel, accumsan lectus. Donec ultrices, magna sed consectetur bibendum, lectus odio luctus augue, quis consectetur ex neque quis augue. Mauris rutrum sed lacus sit amet sollicitudin. Aliquam ut eros sed dui ultricies dignissim. Aenean quis odio eleifend, commodo leo id, venenatis urna. Phasellus lacinia, ante laoreet egestas laoreet, ipsum libero volutpat massa, in varius est erat quis ipsum. Duis pulvinar lacinia justo, eget aliquam mi vehicula vitae. Aenean mi leo, consequat iaculis leo ut, facilisis viverra urna. Phasellus tempus pulvinar urna, sed posuere nulla volutpat at. Vivamus aliquam risus ante, eget cursus velit laoreet sit amet. Suspendisse libero turpis, porttitor ac purus id, blandit commodo dolor." d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" />
+                <Button x:Name="button" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="103,38,0,0" VerticalAlignment="Top" Height="90" Width="86"/>
+                <Button x:Name="button_Copy" Content="" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="348,53,0,0" VerticalAlignment="Top" Height="90" Width="86"/>
+            </Grid>
+            <Button x:Name="button1" Content="Choose the cities" HorizontalAlignment="Left" BorderBrush="Transparent" VerticalAlignment="Top" Height="61" Width="268" FontSize="24" Margin="1037,66,0,0" Click="button1_Click"/>
+        </Grid>
+    </ScrollViewer>
+</Page>
